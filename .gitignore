@@ -1,0 +1,17 @@
+node_modules
+package-lock.json
+*.log*
+.npm
+.nuxt
+.nitro
+.cache
+.output
+*.env
+!.env
+dist
+.vscode
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
