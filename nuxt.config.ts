@@ -7,6 +7,7 @@ export default({
     modules: [
         '@unocss/nuxt',
         '@nuxtjs/color-mode',
+        '@nuxt/image-edge',
         '@nuxt/content',
         'nuxt-icon'
     ],
