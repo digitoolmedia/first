@@ -9,7 +9,7 @@ Work in progress, still need to add used deps.
 2. CSS
     - [x] [unoCSS](https://github.com/unocss/unocss)
 3. Images
-    - [ ] [Nuxt Image](https://github.com/nuxt/image)
+    - [x] [Nuxt Image](https://github.com/nuxt/image)
 4. Languages
     - [ ] [i18n](https://github.com/nuxt-modules/i18n)
 5. Color Mode
