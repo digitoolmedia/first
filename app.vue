@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="prose">
+        <h1>Hi</h1>
         <ContentDoc />
     </div>
 </template>

@@ -1,6 +1,8 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// unocss.config.js
+import { defineConfig, presetAttributify, presetTypography, presetUno } from 'unocss'
 import transformerDirectives from '@unocss/transformer-directives'
 
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default({
     modules: [
         '@unocss/nuxt',
@@ -34,6 +36,12 @@ export default({
         // core options
         shortcuts: [],
         rules: [],
+
+        presets: [
+            presetAttributify(), // required if using attributify mode
+            presetUno(), // required
+            presetTypography(),
+          ],
     },
     colorMode: {
         preference: 'system',
