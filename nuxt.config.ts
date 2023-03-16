@@ -1,5 +1,5 @@
 // unocss.config.js
-import { defineConfig, presetAttributify, presetTypography, presetUno } from 'unocss'
+import { presetAttributify, presetTypography, presetUno } from 'unocss'
 import transformerDirectives from '@unocss/transformer-directives'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -29,6 +29,7 @@ export default({
     unocss: {
         uno: true,
         attributify: true,
+        typography: true,
         preflight: true,
 
         transformers: [transformerDirectives()],
