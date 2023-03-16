@@ -1,7 +1,8 @@
 # first
-This is the first, official, Nuxt project that digitoolmedia started working on.
+This is the first, official, Nuxt project that digitoolmedia is working on.
 
 ## What it needs:
+Work in progress, still need to add used deps.
 
 1. Content
     - [x] [@nuxt/content](https://github.com/nuxt/content)
