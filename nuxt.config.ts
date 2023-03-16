@@ -9,6 +9,7 @@ export default({
         '@nuxtjs/color-mode',
         '@nuxt/image-edge',
         '@nuxt/content',
+        '@nuxtjs/i18n',
         'nuxt-icon'
     ],
     nitro: {

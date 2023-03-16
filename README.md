@@ -11,7 +11,7 @@ Work in progress, still need to add used deps.
 3. Images
     - [x] [Nuxt Image](https://github.com/nuxt/image)
 4. Languages
-    - [ ] [i18n](https://github.com/nuxt-modules/i18n)
+    - [x] [i18n](https://github.com/nuxt-modules/i18n)
 5. Color Mode
     - [x] [ColorMode](https://github.com/nuxt-modules/color-mode)
 6. Google Fonts
