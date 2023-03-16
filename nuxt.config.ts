@@ -5,6 +5,7 @@ export default({
     modules: [
         '@unocss/nuxt',
         '@nuxtjs/color-mode',
+        '@nuxt/content',
         'nuxt-icon'
     ],
     nitro: {
@@ -19,6 +20,9 @@ export default({
     },
     typescript: {
         shim: false
+    },
+    content: {
+        // https://content.nuxtjs.org/api/configuration
     },
     unocss: {
         uno: true,
