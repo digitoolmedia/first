@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import transformerDirectives from '@unocss/transformer-directives'
+
 export default({
     modules: [
         '@unocss/nuxt',
@@ -22,6 +24,12 @@ export default({
         uno: true,
         attributify: true,
         preflight: true,
+
+        transformers: [transformerDirectives()],
+
+        // core options
+        shortcuts: [],
+        rules: [],
     },
     colorMode: {
         preference: 'system',
