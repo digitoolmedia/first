@@ -14,11 +14,9 @@ Work in progress, still need to add used deps.
     - [x] [i18n](https://github.com/nuxt-modules/i18n)
 5. Color Mode
     - [x] [ColorMode](https://github.com/nuxt-modules/color-mode)
-6. Google Fonts
-    - [ ] [Google Fonts](https://github.com/nuxt-modules/google-fonts)
-7. Indicization
+6. Indicization
     - [ ] [robots.txt](https://github.com/nuxt-modules/robots)
-8. Analytics
+7. Analytics
     - [ ] [web-vitals](https://github.com/nuxt-modules/web-vitals)
-9.  Login
+8.  Login
     - [ ] [nuxt-auth](https://github.com/sidebase/nuxt-auth)
