@@ -7,6 +7,7 @@ export default({
         '@nuxt/content',
         '@nuxtjs/i18n',
         '@nuxt/devtools',
+        '@vueuse/nuxt',
     ],
     nitro: {
         compressPublicAssets: true,
