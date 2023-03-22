@@ -39,7 +39,13 @@ export default({
         presets: [
             presetAttributify(), // required if using attributify mode
             presetUno(), // required
-            presetTypography(),
+            presetTypography({
+                cssExtend: {
+                    'pre,code': {
+                        background: '#a0a0a0',
+                    },
+                },
+            }),
           ],
     },
     colorMode: {
