@@ -1,6 +1,5 @@
 // unocss.config.js
-import { presetAttributify, presetTypography, presetUno } from 'unocss'
-import transformerDirectives from '@unocss/transformer-directives'
+import { presetAttributify, presetTypography, presetUno, transformerDirectives } from 'unocss'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default({
@@ -40,11 +39,7 @@ export default({
             presetAttributify(), // required if using attributify mode
             presetUno(), // required
             presetTypography({
-                cssExtend: {
-                    'pre,code': {
-                        background: '#a0a0a0',
-                    },
-                },
+                cssExtend: {},
             }),
           ],
     },
