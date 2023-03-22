@@ -20,6 +20,9 @@ export default({
     typescript: {
         shim: false
     },
+    css: [
+        '@unocss/reset/tailwind.css',
+    ],
     content: {
         // https://content.nuxtjs.org/api/configuration
     },
