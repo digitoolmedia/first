@@ -18,6 +18,7 @@ export default defineConfig({
     presetUno(),
     presetAttributify(),
     presetIcons({
+      cdn: 'https://esm.sh/',
       scale: 1.2,
       extraProperties: {
         'display': 'inline-block',
