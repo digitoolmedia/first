@@ -11,8 +11,8 @@
                 </ContentNavigation>
             </div>
             <button @click="$colorMode.preference = $colorMode.value === 'dark' ? 'light' : 'dark'" >
-				<p v-if="$colorMode.value === 'light'">il tema è chiaro <UnoIcon class="i-ph:sun"/></p>
-				<p v-else>il tema è scuro <UnoIcon class="i-ph:moon"/></p>
+				<p v-if="$colorMode.value === 'light'">il tema è chiaro <span class="i-ph:sun"></span></p>
+				<p v-else>il tema è scuro <span class="i-ph:moon"></span></p>
 			</button>
         </div>
         <NuxtPage />
