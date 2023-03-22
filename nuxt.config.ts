@@ -6,6 +6,7 @@ export default({
         '@nuxt/image-edge',
         '@nuxt/content',
         '@nuxtjs/i18n',
+        '@nuxt/devtools',
     ],
     nitro: {
         compressPublicAssets: true,
