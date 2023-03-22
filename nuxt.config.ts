@@ -44,6 +44,21 @@ export default({
             ],
         },
     },
+    image: {
+        provider: 'ipx',
+        ipx: {
+            maxAge: 2592000,
+        },
+        // The screen sizes predefined by `@nuxt/image`:
+        screens: {
+            xs: 320,
+            sm: 640,
+            md: 1024,
+            lg: 1280,
+            xl: 1920,
+            xxl: 2560,
+        },
+    },
     colorMode: {
         preference: 'system',
         fallback: 'light',

@@ -1,28 +1,28 @@
 <template>
-    <div class="hero">
-        <div class="layout">
-          <div class="content">
-            <div class="title">
-              <ContentSlot :use="$slots.title" unwrap="p">
-                Hero title
-              </ContentSlot>
-            </div>
-            <div class="description">
-              <ContentSlot :use="$slots.description" unwrap="p">
-                Hero description
-              </ContentSlot>
-            </div>
-          </div>
-          <NuxtImg
-            v-if="image"
-            :class="imagePosition"
-            :src="image"
-            :alt="imageAlt"
-            :width="16"
-            :height="9"
-          />
-        </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div>
+      <h1 class="text-4xl fw-bold m-0">
+        <ContentSlot :use="$slots.title" unwrap="p">
+          Hero title
+        </ContentSlot>
+      </h1>
+      <p class="mt-3 text-xl">
+        <ContentSlot :use="$slots.description" unwrap="p">
+          Hero description
+        </ContentSlot>
+      </p>
     </div>
+    <NuxtPicture
+      v-if="image"
+      :class="imagePosition"
+      class="b-1"
+      :src="image"
+      :alt="imageAlt"
+      sizes="lg:100vw xl:2048px xxl:4096px"
+      :imgAttrs="{ class:'object-cover aspect-video', }"
+      fetchpriority="high"
+    />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -43,32 +43,7 @@ defineProps({
 </script>
 
 <style scoped>
-.hero .layout {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: var(--space-8);
-}
-
-@media (min-width: 1024px) {
-    .hero .layout {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-.hero .layout .title {
-    @apply text-4xl fw-bold;
-}
-
-.hero .layout .description {
-    @apply mt-3 text-xl;
-}
-
-.hero .layout img {
-    @apply w-100% b-1 object-cover aspect-video;
-}
-
-.hero .layout img.left {
+ img.left {
     @apply order--1;
 }
-
 </style>
