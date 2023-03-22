@@ -30,6 +30,18 @@ export default({
               // Theme used if `html.dark`
               dark: 'github-dark',
             },
+            prelaod: [
+                'diff',
+                'json',
+                'js',
+                'ts',
+                'css',
+                'shell',
+                'html',
+                'md',
+                'yaml',
+                'vue',
+            ],
         },
     },
     colorMode: {
