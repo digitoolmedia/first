@@ -1,6 +1,3 @@
-// unocss.config.js
-import { presetAttributify, presetTypography, presetUno, transformerDirectives } from 'unocss'
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default({
     modules: [
@@ -9,7 +6,6 @@ export default({
         '@nuxt/image-edge',
         '@nuxt/content',
         '@nuxtjs/i18n',
-        'nuxt-icon'
     ],
     nitro: {
         compressPublicAssets: true,
@@ -25,26 +21,6 @@ export default({
     ],
     content: {
         // https://content.nuxtjs.org/api/configuration
-    },
-    unocss: {
-        uno: true,
-        attributify: true,
-        typography: true,
-        preflight: true,
-
-        transformers: [transformerDirectives()],
-
-        // core options
-        shortcuts: [],
-        rules: [],
-
-        presets: [
-            presetAttributify(), // required if using attributify mode
-            presetUno(), // required
-            presetTypography({
-                cssExtend: {},
-            }),
-          ],
     },
     colorMode: {
         preference: 'system',
