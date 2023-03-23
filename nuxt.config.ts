@@ -9,6 +9,9 @@ export default({
         '@nuxt/devtools',
         '@vueuse/nuxt',
     ],
+    extends: [
+        'nuxt-seo-kit'
+    ],
     nitro: {
         compressPublicAssets: true,
         prerender: {
@@ -71,5 +74,13 @@ export default({
                 lang: 'en'
             }
         },
-    }
+    },
+    runtimeConfig: {
+        public: {
+          siteUrl: `https://${process.env.PUBLIC_SITE_URL}` || 'https://example.com',
+          siteName: 'Website',
+          siteDescription: 'Welcome to my awesome website!',
+          language: 'en', // prefer more explicit language codes like `en-AU` over `en`
+        }
+    },
 });
