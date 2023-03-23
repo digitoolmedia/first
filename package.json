@@ -6,7 +6,6 @@
     "scripts": {
         "build": "nuxt build",
         "dev": "nuxt dev",
-        "dev:share": "nuxt dev -p 30000",
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare"
