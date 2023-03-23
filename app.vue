@@ -11,3 +11,10 @@
 
 <style>
 </style>
+
+<script>
+useSeoMeta({
+  title: 'Home',
+  description: 'My awesome home page.',
+})
+</script>
