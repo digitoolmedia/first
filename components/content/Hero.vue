@@ -18,7 +18,7 @@
       class="b-1"
       :src="image"
       :alt="imageAlt"
-      sizes="lg:100vw xl:2048px xxl:4096px"
+      sizes="xs:512px md:1024px xl:2048px xxl:4096px"
       :imgAttrs="{ class:'object-cover aspect-video', }"
       fetchpriority="high"
     />
