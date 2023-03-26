@@ -1,3 +1,14 @@
+// import UnoCSS
+import {
+    presetAttributify,
+    presetIcons,
+    presetTypography,
+    presetUno,
+    presetWebFonts,
+    transformerDirectives,
+    transformerVariantGroup,
+} from 'unocss'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
@@ -21,6 +32,33 @@ export default defineNuxtConfig({
     css: [
         '@unocss/reset/tailwind.css',
     ],
+    unocss: {
+        presets: [
+            presetUno(),
+            presetAttributify(),
+            presetIcons({
+              cdn: 'https://esm.sh/',
+              scale: 1.2,
+              extraProperties: {
+                'display': 'inline-block',
+                'vertical-align': 'middle',
+                // ...
+              },
+            }),
+            presetTypography(),
+            presetWebFonts({
+              fonts: {
+                sans: 'DM Sans',
+                serif: 'DM Serif Display',
+                mono: 'DM Mono',
+              },
+            }),
+          ],
+          transformers: [
+            transformerDirectives(),
+            transformerVariantGroup(),
+        ],
+    },
     content: {
         // https://content.nuxtjs.org/api/configuration
         highlight: {
