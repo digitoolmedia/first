@@ -15,7 +15,7 @@ Work in progress, still need to add used deps.
 5. Color Mode
     - [x] [ColorMode](https://github.com/nuxt-modules/color-mode)
 6. Indicization
-    - [x] [nuxt-seo-kit](https://github.com/harlan-zw/nuxt-seo-kit)
+    - [x] ~~[nuxt-seo-kit](https://github.com/harlan-zw/nuxt-seo-kit)~~ it should be used in the project that refers to this (see #6)
 7. Analytics
     - [ ] [web-vitals](https://github.com/nuxt-modules/web-vitals)
 8.  Login
