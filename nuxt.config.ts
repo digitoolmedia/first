@@ -1,4 +1,14 @@
-import { transformerDirectives, transformerVariantGroup } from 'unocss'
+// import UnoCSS
+import {
+    presetAttributify,
+    presetIcons,
+    presetTypography,
+    presetUno,
+    presetWebFonts,
+    transformerDirectives,
+    transformerVariantGroup,
+} from 'unocss'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
@@ -9,7 +19,6 @@ export default defineNuxtConfig({
         '@nuxtjs/i18n',
         '@nuxt/devtools',
         '@vueuse/nuxt',
-        '@unocss/transformer-directives',
     ],
     nitro: {
         compressPublicAssets: true,
@@ -24,27 +33,28 @@ export default defineNuxtConfig({
         '@unocss/reset/tailwind.css',
     ],
     unocss: {
-        uno: true,
-        attributify: true,
-        typography: true,
-        preflight: true,
-        icons: {
-            cdn: 'https://esm.sh/',
+        presets: [
+            presetUno(),
+            presetAttributify(),
+            presetIcons({
+              cdn: 'https://esm.sh/',
               scale: 1.2,
               extraProperties: {
                 'display': 'inline-block',
                 'vertical-align': 'middle',
                 // ...
-            },
-        },
-        WebFonts: {
-            fonts: {
+              },
+            }),
+            presetTypography(),
+            presetWebFonts({
+              fonts: {
                 sans: 'DM Sans',
                 serif: 'DM Serif Display',
                 mono: 'DM Mono',
-            },
-        },
-        transformers: [
+              },
+            }),
+          ],
+          transformers: [
             transformerDirectives(),
             transformerVariantGroup(),
         ],
